@@ -1,4 +1,4 @@
-## Desafio para Backend Software Engineer 
+## Desafio para Backend Software Engineer
 
 Você está revisando as decisões de design de um software que processa Pedidos online. Por estes pedidos, são realizados pagamentos que recebem tratamentos a depender as situações específicas de cada um como segue:
 
@@ -28,7 +28,7 @@ Por favor, inclua suas considerações da atividade em um arquivo de texto ou ma
 __O que não vale?__
  - Frameworks :] (aliás, nem precisa)
  - Metaprogramação
- 
+
 __Qual linguagem?__
 Ruby.
 
@@ -45,3 +45,10 @@ Para nos enviar seu código, você pode:
 
  - Fazer um fork desse repositório, e nos mandar uma pull-request.
  - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `hlegius` e `matheusca`.
+
+## Solução
+ - Separei as classes em arquivos separados
+ - Criei os métodos para as classes filhas de `Product`
+ - A classe `OrderItem` acessa as regras
+ - Ao fazer o build dos tipos, ele já instancia o produto correto, dentro do hash
+ - peguei o bootstrap e transformei em teste, ainda dá para escrever mais casos
